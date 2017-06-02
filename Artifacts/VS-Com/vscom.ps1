@@ -20,3 +20,11 @@ catch
 {
     Write-Error "Failed to download VS 2017";
 }
+try
+{
+    Start-Process -FilePath $vscodeSetup -ArgumentList "--add Microsoft.VisualStudio.Workload.NetCoreTools;includeRecommended --passive";
+}
+catch
+{
+    Write-Error "Failed to install VS 2017";
+}
