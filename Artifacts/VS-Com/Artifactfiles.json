@@ -1,0 +1,15 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+    "title": "Visual Studio Community",
+    "description": "Installs Visual Studio Community.exe",
+    "tags": [
+        "Windows",
+        "Visual Studio",
+        "Community"
+    ],
+    "iconUri": "https://cheekandchongsupinthesmoke-my.sharepoint.com/personal/bulletformyvalentine_cheekandchongsupinthesmoke_onmicrosoft_com/_layouts/15/guestaccess.aspx?docid=16ed1fc51bf2140c48dc9c59b772aa2b0&authkey=AWnVw2ZLriPVacJJlF8gX10",
+    "targetOsType": "Windows",
+    "runCommand": {
+        "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File vscom.ps1"
+    }
+}
